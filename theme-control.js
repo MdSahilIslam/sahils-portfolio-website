@@ -1,17 +1,23 @@
 const setting_icon = document.querySelector(".style-switcher-toggle");
-const stytle_switcher = document.querySelector(".style-switcher");
+const style_switcher = document.querySelector(".style-switcher");
 
 setting_icon.addEventListener("click" ,() => {
-    stytle_switcher.classList.toggle("open");
+    style_switcher.classList.toggle("open");
 })
 
 window.addEventListener("scroll",() => {
-    if (stytle_switcher.classList.contains("open")){
-        stytle_switcher.classList.remove("open");
+    if (style_switcher.classList.contains("open")){
+        style_switcher.classList.remove("open");
     }
     
 });
 
+window.addEventListener("dblclick",() => {
+    if (style_switcher.classList.contains("open")){
+        style_switcher.classList.remove("open");
+    }
+    
+});
 
 /* ====Theme Change====*/
 
